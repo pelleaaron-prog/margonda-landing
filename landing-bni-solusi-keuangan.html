@@ -107,6 +107,17 @@
   .bnid-feat h4{ font-size:0.92rem; color:var(--navy-deep); margin-bottom:5px; font-weight:700; }
   .bnid-feat p{ font-size:0.82rem; color:var(--ink-soft); }
 
+  .wondr-panel{ background:linear-gradient(120deg, #6EE7C9 0%, #C9EA4C 48%, #8B7CF6 100%); border-radius:20px; padding:36px; display:flex; flex-wrap:wrap; gap:32px; align-items:center; justify-content:space-between; }
+  .wondr-info{ max-width:440px; }
+  .wondr-badge{ display:inline-block; background:white; color:var(--navy-deep); font-size:0.72rem; font-weight:700; padding:5px 12px; border-radius:999px; letter-spacing:0.03em; margin-bottom:12px; }
+  .wondr-info h3{ font-size:1.4rem; color:var(--navy-deep); font-weight:800; margin-bottom:10px; }
+  .wondr-info p{ color:var(--navy-deep); font-size:0.9rem; margin-bottom:22px; opacity:0.85; }
+  .wondr-actions{ display:flex; gap:12px; flex-wrap:wrap; }
+  .wondr-actions .btn-ghost{ background:white; }
+  .wondr-qr-box{ background:white; border-radius:18px; padding:18px; box-shadow:0 14px 32px -14px rgba(0,36,72,0.35); flex:none; text-align:center; }
+  .wondr-qr-box img{ display:block; border-radius:8px; width:200px; height:200px; }
+  .wondr-qr-box span{ display:block; margin-top:10px; font-size:0.72rem; color:var(--ink-soft); font-family:'IBM Plex Mono',monospace; }
+
   .form-section{ background:var(--navy-deep); color:white; border-radius:24px; margin:0 28px; padding:56px 40px; position:relative; overflow:hidden; }
   .form-section::after{ content:""; position:absolute; bottom:-140px; left:-100px; width:380px; height:380px; border-radius:50%; background:radial-gradient(circle, rgba(242,101,34,0.28), transparent 70%); }
   .form-head{ max-width:680px; margin-bottom:36px; position:relative; }
@@ -138,6 +149,9 @@
     .hero{ padding:52px 0 44px; }
     section{ padding:56px 0; }
     .bnid-panel{ padding:24px; }
+    .wondr-panel{ padding:24px; justify-content:center; text-align:center; }
+    .wondr-info{ max-width:100%; }
+    .wondr-actions{ justify-content:center; }
   }
 </style>
 </head>
@@ -151,6 +165,7 @@
       <a href="#produktif">Kredit Usaha</a>
       <a href="#tabungan">Tabungan</a>
       <a href="#bnidirect">BNIdirect</a>
+      <a href="#wondr">wondr</a>
     </div>
     <a href="#ajukan" class="nav-cta">Konsultasi Sekarang</a>
   </nav>
@@ -170,6 +185,7 @@
       <a href="#produktif">💼 KUR & BWU</a>
       <a href="#tabungan">💰 Tapenas & Tabungan SR</a>
       <a href="#bnidirect">⚡ BNIdirect Bisnis</a>
+      <a href="#wondr">📱 Buka Rekening via wondr</a>
     </div>
   </div>
 </section>
@@ -333,6 +349,32 @@
       </div>
     </div>
     <p style="font-size:0.74rem; color:var(--ink-soft); margin-top:14px;">*Data performa BNIdirect bisnis per Mei 2026, bersifat indikatif dan dapat berubah.</p>
+  </div>
+</section>
+
+<!-- WONDR ACCOUNT OPENING -->
+<section id="wondr">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker kicker-teal">Buka Rekening Digital</span>
+      <h2>Buka rekening BNI langsung dari HP dengan wondr</h2>
+      <p>Tidak perlu antre ke cabang — download aplikasi wondr by BNI, scan kode QR atau klik tautan di bawah, lalu ikuti proses pendaftaran hanya dalam beberapa menit.</p>
+    </div>
+    <div class="wondr-panel">
+      <div class="wondr-info">
+        <span class="wondr-badge">wondr by BNI</span>
+        <h3>Nikmatin pengalaman wondrful!</h3>
+        <p>Scan kode QR di samping menggunakan kamera HP kamu untuk mengunduh dan mendaftar wondr, atau klik tombol di bawah untuk membuka tautan pendaftaran langsung.</p>
+        <div class="wondr-actions">
+          <a class="btn-primary" href="https://app-wondr.bni.co.id/MIT4/eqa6k5ai" target="_blank" rel="noopener">Download &amp; Daftar wondr</a>
+          <a class="btn-ghost" href="#ajukan">Butuh bantuan konsultasi?</a>
+        </div>
+      </div>
+      <div class="wondr-qr-box">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https%3A%2F%2Fapp-wondr.bni.co.id%2FMIT4%2Feqa6k5ai" width="200" height="200" alt="QR Code download dan daftar wondr by BNI" loading="lazy">
+        <span>Scan untuk buka rekening</span>
+      </div>
+    </div>
   </div>
 </section>
 
